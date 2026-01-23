@@ -58,7 +58,7 @@ def main():
     parser.add_argument('--decay_rate', type=float, default=0.5, help='学习率衰减率')
     parser.add_argument('--grad_clip', type=float, default=5.0, help='梯度裁剪')
     parser.add_argument('--rec_loss', type=float, default=0.5, help='重构损失权重')
-    parser.add_argument('--early_stop', type=int, default=20, help='早停轮数 (验证集无提升时停止)')
+    parser.add_argument('--early_stop', type=int, default=50, help='早停轮数 (验证集无提升时停止)')
     
     # 其他参数
     parser.add_argument('--mode', type=str, default='train', choices=['prepro', 'train', 'test'],
